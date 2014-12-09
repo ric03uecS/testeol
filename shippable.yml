@@ -4,3 +4,4 @@ python:
 install: true
 script:
  - printf "This is a line without a newline at the end of it"
+ - echo -e "This is another line without a newline at the end\c"
