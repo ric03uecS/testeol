@@ -1,7 +1,14 @@
 language: python
 python:
  - 2.7
+env:
+ global:
+  - test1=value1
+  - test2=value2
+  
 install: true
 script:
+ - echo $test1
+ - echo $test2
  - printf "This is a line without a newline at the end of it"
  - echo -e "This is another line without a newline at the end\c"
